@@ -1,0 +1,29 @@
+:root {
+  --bg-color: #ffffff;           /* Sahifa foni */
+  --header-bg: #ffffff;         /* Header foni */
+  --text-main: #1a1a1a;         /* Asosiy matnlar (h1, h2) */
+  --text-second: #555555;       /* Tavsiflar (p) */
+  --box-bg: #f5f5f5;            /* Rasm orqasidagi quti foni */
+  --icon-color: #444444;        /* Ikonkalar rangi */
+  
+  /* Primary color - bu headerdagi color-modal orqali o'zgaradi, 
+     shuning uchun bu yerda faqat default qiymatini beramiz */
+  --primary-color: #2563eb; 
+}
+
+/* 2. DARK MODE (Body-ga .dark-theme klassi qo'shilganda) */
+body.dark-theme {
+  --bg-color: #0f172a;          /* To'q ko'k/qora fon */
+  --header-bg: #0f172a;         /* To'q header */
+  --text-main: #f8fafc;         /* Oqish matn */
+  --text-second: #cbd5e1;       /* Kulrangroq matn */
+  --box-bg: #1e293b;            /* Rasm orqasidagi quti (dark) */
+  --icon-color: #94a3b8;        /* Ikonkalar (dark) */
+}
+
+/* 3. ASOSIY ELEMENTLARGA QO'LLASH */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Silliq o'tish */
+}

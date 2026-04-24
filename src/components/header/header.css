@@ -1,0 +1,11 @@
+:root {
+  --header-bg: #ffffff;
+  --text-color: #000000;
+  --primary-color: #2563eb; /* Boshlang'ich rang */
+}
+
+/* Dark mode (body'ga dark-theme klassi qo'shilganda) */
+body.dark-theme {
+  --header-bg: #0f172a;
+  --text-color: #f8fafc;
+}

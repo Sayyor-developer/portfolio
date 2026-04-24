@@ -1,0 +1,144 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button, input {
+    outline: none;
+}
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* DEFAULT FONT */
+p, button, li, h1, h2, h3, h4, span, b {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ROOT VARIABLES (RESPONSIVE) */
+:root {
+    /* border */
+    --border-1: 1px solid black;
+
+    /* colors */
+    --primary-color: #2563eb;
+    --white: #ffffff;
+    --black: #000000;
+    --shadow-color: rgba(242, 237, 237, 0.438);
+    --gray:gray;
+
+    /* responsive font sizes */
+    --font-size-16: clamp(14px, 1vw, 16px);
+    --font-size-18: clamp(15px, 2.5vw, 18px);
+    --font-size-20: clamp(16px, 1.4vw, 20px);
+    --font-size-25: clamp(18px, 1.6vw, 25px);
+    --font-size-30: clamp(22px, 4vw, 30px);
+    --font-size-35: clamp(25px, 4vw, 35px);
+    --font-size-40: clamp(28px, 5vw, 40px);
+    --font-size-45: clamp(30px, 3.5vw, 45px);
+    --font-size-50: clamp(32px, 4vw, 50px);
+    --font-size-55: clamp(36px, 5vw, 55px);
+    --font-size-60: clamp(40px, 6vw, 60px);
+
+    /* font weights */
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-900: 900;
+
+    /* gaps (responsive) */
+    --gap-10: clamp(6px, 1vw, 10px);
+    --gap-20: clamp(10px, 2vw, 20px);
+    --gap-30: clamp(15px, 3vw, 30px);
+    --gap-40: clamp(20px, 4vw, 40px);
+    --gap-50: clamp(25px, 5vw, 50px);
+}
+
+/* CURSOR POINTER */
+button, i, svg, li {
+    cursor: pointer;
+}
+
+/* MAX WIDTH */
+.max-width {
+    max-width: 1200px;
+    margin: auto;
+    transition: all .3s ease;
+}
+
+/* DISPLAY UTILITIES */
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap-10{
+    gap: var(--gap-10);
+}
+.gap-20{
+    gap: var(--gap-20);
+}
+.gap-30{
+    gap: var(--gap-30);
+}
+.gap-40{        
+    gap: var(--gap-40);
+}
+.gap-50{
+    gap: var(--gap-50);
+}
+
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.none { display: none; }
+.block { display: block; }
+
+
+/* ?! button */
+
+.btn{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--primary-color);
+    border-radius: 7px;
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-400);
+    transition: all .3s ease;
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    transform: translateX(10px);
+
+}
+
+/* ?  */
+
+.ant-modal-footer{
+      display: none;
+    }   
+
+    .ant-modal-title{
+      font-size: var(--font-size-25) !important;
+      font-weight: var(--font-weight-500) !important;
+    color: var(--primary-color) !important;
+    }
+
+    .ant-modal-body{
+        font-size: var(--font-size-18) !important;
+        color: var(--gray) !important;
+        line-height: 30px !important;
+    }
